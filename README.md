@@ -60,4 +60,4 @@ Make sure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/intelligenz-website.git
+   git clone [https://github.com/your-username/intelligenz-website.git](https://github.com/Sanskriti1102/Techtalksintelligenz.git)

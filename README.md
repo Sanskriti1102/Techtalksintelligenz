@@ -1,5 +1,8 @@
 # Intelligenz Website
 
+### Project Admin: [Sanskriti Kadam](https://github.com/Sanskriti1102)
+
+
 This is the official website for **Intelligenz**, a platform aimed at fostering innovation, providing resources, and building a tech-savvy community. The website includes various sections such as blogs, resources, community events, and a knowledge hub to keep users updated with the latest trends in technology and innovation.
 
 ## Table of Contents

@@ -111,7 +111,7 @@ These include:
 - **YouTube and LinkedIn Links**
 
 ### YouTube Link:
-- [Tech Talks YouTube Video](https://www.youtube.com/watch?v=-fn03sOpqWU&feature=youtu.be)
+- [Tech Talks YouTube Video](https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww)
 
 ### LinkedIn Link:
 - [Tech Talks LinkedIn](https://www.linkedin.com/company/intelligenztechtalks/)

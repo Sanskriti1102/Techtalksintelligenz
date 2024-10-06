@@ -1,4 +1,22 @@
- AOS.init({
+document.addEventListener('mousemove', (e) => {
+	const dust = document.createElement('div');
+	dust.classList.add('fairy-dust');
+	dust.style.left = `${e.pageX}px`;
+	dust.style.top = `${e.pageY}px`;
+	
+	document.body.appendChild(dust);
+  
+	// Start the animation
+	dust.style.opacity = 1;
+	dust.style.animation = 'sparkle 1s forwards'; 
+  
+	// Remove the element after the animation
+	dust.addEventListener('animationend', () => {
+	  dust.remove();
+	});
+  });
+  
+AOS.init({
  	duration: 800,
  	easing: 'slide'
  });

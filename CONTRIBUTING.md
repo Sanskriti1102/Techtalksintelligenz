@@ -1,5 +1,5 @@
 <h1 align="center">Contributors Guide for Techtalksintelligenz⚡</h1>
-<h3 align="center">Welcome to ElectroKart! Make sure to star this repository😍<br>We appreciate your interest in contributing.😊 <br>This guide will help you get started with the project and make your first contribution.</h3>
+<h3 align="center">Welcome to Tech Talks X IntelligenZ! Make sure to star this repository😍<br>We appreciate your interest in contributing.😊 <br>This guide will help you get started with the project and make your first contribution.</h3>
 
 ---
 

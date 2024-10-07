@@ -161,8 +161,14 @@ Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) for more detailed informa
 For more information or questions, you can contact the project admin:
 - **Sanskriti Kadam**: [GitHub Profile](https://github.com/Sanskriti1102)
 
-# Big thanks to all the contributors! 🎉
+## 👀 Our Contributors
 
-<a href="https://github.com/Sanskriti1102/Techtalksintelligenz/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Sanskriti1102/Techtalksintelligenz" />
-</a>
+- We extend our heartfelt gratitude for your invaluable contribution to our project! Your efforts play a pivotal role in elevating Ratna-Supermarket to greater heights.
+- Make sure you show some love by giving ⭐ to our repository.
+
+<div align="center">
+
+  <a href="https://github.com/Sanskriti1102/Techtalksintelligenz">
+    <img src="https://contrib.rocks/image?repo=Sanskriti1102/Techtalksintelligenz&&max=100" />
+  </a>
+</div>

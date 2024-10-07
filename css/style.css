@@ -453,6 +453,12 @@ h6,
   line-height: 1.2;
 }
 
+.hero-heading {
+  color: rgb(198, 198, 198);
+  font-size: 70px !important;
+  font-weight: bold;
+}
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -2209,6 +2215,10 @@ pre code {
 
   .table-responsive-sm>.table-bordered {
     border: 0;
+  }
+
+  .hero-heading {
+    font-size: 50px !important;
   }
 }
 
@@ -13361,6 +13371,9 @@ textarea.form-control {
 @media (max-width: 767.98px) {
   .ftco-counter .counter-wrap {
     margin-bottom: 20px;
+  }
+  .ftco-hireme h2 {
+    font-size: 30px;
   }
 }
 

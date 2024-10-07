@@ -12003,8 +12003,8 @@ h5,
 
 .ftco-navbar-light.scrolled .navbar-toggler {
   border: none;
-  color: rgba(0, 0, 0, 0.5) !important;
-  border-color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 16px;

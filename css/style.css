@@ -70,8 +70,8 @@ section {
 }
 
 .invite-button {
-  background-color: #007bff; /* gradient blue color */
-  color: white;
+  background-color: transparent; 
+  color: black;
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
@@ -80,7 +80,7 @@ section {
 }
 
 .invite-button:hover {
-  background-color: #ff6347; /* Darker coral color */
+  background-color: blue; 
 }
 /* Modal Styles */
 .modal {
@@ -118,7 +118,7 @@ section {
 }
 
 .invite-button {
-  background-color: #007bff; /* gradient blue color */
+  background-color: transparent; 
   color: white;
   padding: 10px 15px;
   border-radius: 5px;

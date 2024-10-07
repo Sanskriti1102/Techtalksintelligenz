@@ -46,6 +46,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<style>
+		body {
+  cursor: none; /* Hide the default cursor */
+}
+
+.fairy-dust {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  width: 15px;
+  height: 15px;
+  background: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.fairy-dust::before {
+  content: '★'; /* Unicode for star */
+  font-size: 35px;
+  background: linear-gradient(45deg, navy, dodgerblue); /* Gradient from blue to white */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show the gradient */
+  background-clip: text; /* Standard background clip for text */
+  text-fill-color: transparent; /* Standard text fill for gradient */
+}
+
+/* Animation for star dust */
+@keyframes sparkle {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, -30px) scale(0.5);
+    opacity: 0;
+  }
+}
+
 		.video-container {
 			position: relative;
 			width: 100%;
@@ -278,7 +315,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-
+<div class="fairy-dust"></div>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html"> IntelligenZ</a>

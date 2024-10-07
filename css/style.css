@@ -70,7 +70,7 @@ section {
 }
 
 .invite-button {
-  background-color: #2c069d; /* bright blue */
+  background-color: #007bff; /* gradient blue color */
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -118,7 +118,7 @@ section {
 }
 
 .invite-button {
-  background-color: #ff7f50; /* Coral color */
+  background-color: #007bff; /* gradient blue color */
   color: white;
   padding: 10px 15px;
   border-radius: 5px;

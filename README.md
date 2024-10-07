@@ -160,3 +160,9 @@ Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) for more detailed informa
 
 For more information or questions, you can contact the project admin:
 - **Sanskriti Kadam**: [GitHub Profile](https://github.com/Sanskriti1102)
+
+# Big thanks to all the contributors! 🎉
+
+<a href="https://github.com/Sanskriti1102/Techtalksintelligenz/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Sanskriti1102/Techtalksintelligenz" />
+</a>

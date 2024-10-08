@@ -101,9 +101,10 @@ p {
 }
 
 #web-logo{
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 55px;
   margin-right: 15px;
+  margin-bottom: 3px;
 }
 
 abbr[title],

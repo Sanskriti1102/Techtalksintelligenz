@@ -13117,6 +13117,19 @@ textarea.form-control {
   opacity: 0;
   visibility: hidden;
 }
+.icon-twitter:hover{
+  color:white !important; 
+}
+
+.icon-instagram:hover{
+  color:white !important; 
+}
+.fa-youtube:hover{
+  color:white !important; 
+}
+.ftco-animate a:hover{
+  background-color: #0056b3 !important;
+}
 
 .bg-primary {
   background: blue !important;

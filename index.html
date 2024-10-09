@@ -140,7 +140,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
+		.branding-tagline{
+			color:navy ;
+			background-color: white;
+			display: block;
+			font-size: 3rem;
+			text-wrap: nowrap;
+			padding-inline: 10px;
+		}
 
+		
+		@media (max-width: 992px) {
+			.hero-heading {
+				font-size: 3.5rem !important;
+			}
+			.branding-tagline{
+				font-size: 2rem;
+			}
+		}
 		.gradient-background {
 			background: linear-gradient(45deg, navy, dodgerblue) !important;
 			/* width: 100%;
@@ -308,6 +325,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		}
 	</style>
 </head>
+
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	<!-- Google Tag Manager (noscript) -->
@@ -970,6 +988,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 			</div>
+			<!-- Podcast Invitation Modal -->
+<div id="podcastModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h2>Podcast Invitation</h2>
+        <p>
+            Join Tech Talks X IntelligenZ's Tech Talks Podcast for insightful conversations! We collaborate with college committees, hackathon participants, and placement achievers. Share your story, inspire others, and get featured on our podcast. Plus, get spotlighted in our exclusive newsletter, "The Podcasters - Know Who We Are".
+        </p>
+        <p>If you’re interested, please fill out this quick form:</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScpLC68g-_PYulE5GubBGqVQ7q674jD1Y-X4XdoytIueJP4XA/viewform" target="_blank" class="invite-button">Join the Podcast Form</a>
+    </div>
+</div>
+
+<!-- Button in Top Right Corner -->
+<div class="podcast-invitation">
+    <button id="openModal" class="invite-button">Join the Podcast</button>
+</div>
+
+			
 
 			<!-- <div class="row no-gutters block-9">
 				<div class="col-md-6 order-md-last d-flex">
@@ -1092,7 +1129,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				stroke="#F96D00" />
 		</svg></div>
 
-
+		<script>
+			// Get modal element
+			var modal = document.getElementById("podcastModal");
+			// Get open modal button
+			var openModalButton = document.getElementById("openModal");
+			// Get close button
+			var closeModalButton = document.getElementById("closeModal");
+		
+			// Listen for open click
+			openModalButton.onclick = function() {
+				modal.style.display = "block";
+			}
+		
+			// Listen for close click
+			closeModalButton.onclick = function() {
+				modal.style.display = "none";
+			}
+		
+			// Listen for outside click
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+		
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>

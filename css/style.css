@@ -62,6 +62,78 @@ nav,
 section {
   display: block;
 }
+.podcast-invitation {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.invite-button {
+  background-color: transparent; 
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.invite-button:hover {
+  background-color: blue; 
+}
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.invite-button {
+  background-color: transparent; 
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Positioning the Button */
+.podcast-invitation {
+  position: fixed; /* Fixed position */
+  top: 20px; /* Distance from top */
+  right: 20px; /* Distance from right */
+  z-index: 1001; /* Ensure it's above other content */
+}
 
 body {
   margin: 0;
@@ -98,6 +170,13 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+#web-logo{
+  height: 60px;
+  width: 55px;
+  margin-right: 15px;
+  margin-bottom: 3px;
 }
 
 abbr[title],
@@ -13044,6 +13123,19 @@ textarea.form-control {
 .ftco-animate {
   opacity: 0;
   visibility: hidden;
+}
+.icon-twitter:hover{
+  color:white !important; 
+}
+
+.icon-instagram:hover{
+  color:white !important; 
+}
+.fa-youtube:hover{
+  color:white !important; 
+}
+.ftco-animate a:hover{
+  background-color: #0056b3 !important;
 }
 
 .bg-primary {

@@ -4,8 +4,8 @@ const path = require("path");
 const fs = require("fs");
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"];
-const spreadsheetId = process.env.GoogleSheetID; // Your actual Google Sheet ID
-const sheetName = "Techtalksintelligenz"; // Ensure this matches the exact name of your Google Sheet
+const spreadsheetId = "1r60v-ydSCpLIq6Ub3jfzWiFwDWvtHR0qsQmo3CM7rPQ"; // Your actual Google Sheet ID
+const sheetName = "Responses"; // Ensure this matches the exact name of your Google Sheet
 
 async function SendEmail(req, resp) {
   const transporter = nodemailer.createTransport({

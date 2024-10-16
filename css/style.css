@@ -672,6 +672,9 @@ pre code {
   margin-left: auto;
 }
 
+/* .join-podcast{
+  margin-left: 10px;
+} */
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

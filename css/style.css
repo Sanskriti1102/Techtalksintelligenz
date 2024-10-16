@@ -64,7 +64,7 @@ section {
 }
 .podcast-invitation {
   position: fixed;
-  top: 20px;
+  top: 55px;
   right: 20px;
   z-index: 1000;
 }
@@ -130,7 +130,7 @@ section {
 /* Positioning the Button */
 .podcast-invitation {
   position: fixed; /* Fixed position */
-  top: 20px; /* Distance from top */
+  top: 55px; /* Distance from top */
   right: 20px; /* Distance from right */
   z-index: 1001; /* Ensure it's above other content */
 }
@@ -11872,7 +11872,6 @@ h5,
 .ftco-navbar-light .container {
   width: 1110px;
   margin: 0 auto;
-  padding: 0;
 }
 
 .ftco-navbar-light .navbar-brand {
@@ -13136,6 +13135,7 @@ textarea.form-control {
 }
 .ftco-animate a:hover{
   background-color: #0056b3 !important;
+  border-radius: 5px;
 }
 
 .bg-primary {
@@ -13527,7 +13527,7 @@ textarea.form-control {
 .blog-entry .text .heading a:hover,
 .blog-entry .text .heading a:focus,
 .blog-entry .text .heading a:active {
-  color: blue;
+  color: white;
 }
 
 .blog-entry .meta {

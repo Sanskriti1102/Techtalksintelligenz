@@ -1,0 +1,72 @@
+.google-translate-container {
+    padding: 10px;
+}
+
+.goog-te-combo {
+    background-color: #272d39;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+
+.goog-te-combo:hover {
+    background-color: #272d31;
+    border-color: #0056b3;
+    color: #eee;
+    transform: scale(1.02);
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-gadget>span>a {
+    display: none !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+    color: #fff !important;
+}
+
+.goog-te-gadget .goog-te-combo:hover {
+    color: silver !important;
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:first-child {
+    display: none;
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value:before {
+    content: 'Translate';
+    color: #007bff;
+    font-weight: 600;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-te-menu-frame {
+    max-height: 400px !important;
+    overflow-y: auto !important;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
+}
+
+.skiptranslate>iframe {
+    height: 0 !important;
+    border-style: none;
+    box-shadow: none;
+}

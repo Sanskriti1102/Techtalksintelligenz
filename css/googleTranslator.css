@@ -70,20 +70,3 @@
     border-style: none;
     box-shadow: none;
 }
-
-body {
-    background-color: #f8faff;
-    color: #333;
-    font-family: 'Inter', sans-serif;
-}
-
-a,
-button {
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease;
-}
-
-a:hover,
-button:hover {
-    color: #0056b3;
-    transform: translateY(-3px);
-}

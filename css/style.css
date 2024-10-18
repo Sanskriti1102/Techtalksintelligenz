@@ -12941,7 +12941,7 @@ h5,
 
 @media (min-width: 992px) {
   .margin-top {
-    margin-top: -70px;
+    margin-top: 20px;
     padding-top: 10em !important;
   }
 }
@@ -13459,6 +13459,29 @@ textarea.form-control {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
 }
+
+.stats_container{
+  margin-top: -30px;
+  margin-bottom: 100px;
+  padding: 40px;
+  
+}
+
+.stats{
+  margin-top: -3em;
+}
+
+.stats_box {
+  margin: 0 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+.stats_box:hover {
+  transform: scale(1.05); /* Slightly increase the size on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow for a highlight effect */
+}
+
+
 
 @media (max-width: 767.98px) {
   .ftco-counter .counter-wrap {

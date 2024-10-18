@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Tech Talks X IntelligenZ</title>
+    <link rel="icon" href="Logo.jpg">
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.faq-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #1F1F1F;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    background-color: #444;
+    padding: 15px;
+    margin-top: 5px;
+    display: none;
+    border-radius: 5px;
+}
+
+.toggle-icon {
+    color: #FFD700;
+}
+
+a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div class="faq-container">
+    
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>What is Tech Talks X IntelligenZ?</h3>
+            <span class="toggle-icon">🔻</span>
+        </div>
+        <div class="faq-answer">
+            <p>Tech Talks X IntelligenZ is your source for expert insights into AI, Cybersecurity, Nature-Inspired Computing, and Ubiquitous Computing.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>Where are you based?</h3>
+            <span class="toggle-icon">🔻</span>
+        </div>
+        <div class="faq-answer">
+            <p>We are based in Mumbai, Maharashtra.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>What topics does IntelligenZ cover?</h3>
+            <span class="toggle-icon">🔻</span>
+        </div>
+        <div class="faq-answer">
+            <p>We cover AI, Cybersecurity, Nature-Inspired Computing, Ubiquitous Computing, and Intelligent Security Systems.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>Where can I find learning materials?</h3>
+            <span class="toggle-icon">🔻</span>
+        </div>
+        <div class="faq-answer">
+            <p>Visit our blog and website to access the latest insights and learning resources in intelligent computing.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>How can I stay updated with your content?</h3>
+            <span class="toggle-icon">🔻</span>
+        </div>
+        <div class="faq-answer">
+            <p>Subscribe to our YouTube, Instagram, and WhatsApp community for regular updates.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>How can I benefit from Tech Talks X IntelligenZ?</h3>
+            <span class="toggle-icon">🔻</span>
+        </div>
+        <div class="faq-answer">
+            <p>By joining our community, you'll stay ahead of the curve with expert insights, in-depth content, and the latest updates on the ever-evolving world of intelligent computing.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+            <h3>How can I contact you?</h3>
+            <span class="toggle-icon">🔻</span>
+        </div>
+        <div class="faq-answer">
+            <p>You can contact us via email at <a href="mailto:intelligenz0212@gmail.com">intelligenz0212@gmail.com</a>.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleFAQ(faqElement) {
+    const answer = faqElement.nextElementSibling;
+    const icon = faqElement.querySelector(".toggle-icon");
+
+    // Toggle the display of the answer
+    if (answer.style.display === "block") {
+        answer.style.display = "none";
+        icon.textContent = "🔻";
+    } else {
+        answer.style.display = "block";
+        icon.textContent = "🔺";
+    }
+}
+
+</script>
+</body>
+</html>

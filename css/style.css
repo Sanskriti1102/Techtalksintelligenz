@@ -14147,6 +14147,19 @@ textarea.form-control {
   border-radius: 50px;
 }
 
+/*-- Responsive Layout for Tablets (Width: 768px - 1024px) --*/
+@media (max-width: 1024px) {
+  .social-card-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .social-card {
+    width: 45%; /* Two cards per row */
+    margin: 15px 0;
+  }
+}
+
+/*-- Responsive Layout for Mobile Devices (Max-Width: 768px) --*/
 @media (max-width: 768px) {
   .social-card-container {
     flex-direction: column;

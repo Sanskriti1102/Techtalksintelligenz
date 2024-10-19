@@ -13492,8 +13492,8 @@ textarea.form-control {
   margin-right: 5px; /* Space between the number and the icon */
 }
 
-.number-container .fas.fa-plus {
-  font-size: 19px; 
+.number-container span {
+  font-size: 24px !important;
   color: white; /* Color for the icon */
 }
 

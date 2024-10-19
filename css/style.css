@@ -13481,6 +13481,22 @@ textarea.form-control {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow for a highlight effect */
 }
 
+.number-container {
+  display: inline-flex; 
+  align-items: center; 
+}
+
+
+.number-container .number {
+  font-size: 24px; 
+  margin-right: 5px; /* Space between the number and the icon */
+}
+
+.number-container .fas.fa-plus {
+  font-size: 19px; 
+  color: white; /* Color for the icon */
+}
+
 
 
 @media (max-width: 767.98px) {

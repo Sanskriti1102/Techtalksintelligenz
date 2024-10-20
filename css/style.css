@@ -13992,6 +13992,187 @@ textarea.form-control {
   stroke-linecap: round;
 }
 
+/*--We Feature On Section--*/
+
+.social-card-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.social-card {
+  width: 280px;
+  height: 380px;
+  background: #1A1A1A;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.social-card:hover {
+  transform: translateY(-5px) scale(1.005);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 
+              0 24px 46px rgba(0, 86, 179, 0.48);
+}
+
+.social-card:active {
+  transform: scale(1.2);
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11), 
+              0 15px 24px rgba(0, 86, 179, 0.48);
+}
+
+.social-circle {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: #1A1A1A;
+  border: 2px solid #0056B3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+
+.social-circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  position: absolute;
+  background: #0056B3;
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+  z-index: 1;
+}
+
+.social-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3; 
+}
+
+.social-icon-container i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #ffffff !important;
+}
+
+.social-overlay {
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  background: #0056B3;
+  position: absolute;
+  top: 90px;
+  left: 70px;
+  transform: scale(0);
+  transition: transform 0.3s ease-out;
+  z-index: 0;
+}
+
+.social-card:hover .social-overlay {
+  transform: scale(5);
+}
+
+.social-card:hover .social-circle {
+  border-color: #1A1A1A;
+  background: #0056B3;
+}
+
+.social-card:hover .social-circle:after {
+  background: #1A1A1A;
+}
+
+.social-card p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 30px;
+  transition: opacity 0.3s ease-out, visibility 0s 0.3s;
+}
+
+.social-card:hover p {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.social-hover-text {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-out, visibility 0s 0.3s;
+}
+
+.social-card:hover .social-hover-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 200px;
+  color: white;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+/*-- Responsive Layout for Tablets (Width: 768px - 1024px) --*/
+@media (max-width: 1024px) {
+  .social-card-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .social-card {
+    width: 45%; /* Two cards per row */
+    margin: 15px 0;
+  }
+}
+
+/*-- Responsive Layout for Mobile Devices (Max-Width: 768px) --*/
+@media (max-width: 768px) {
+  .social-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-card {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/*--We Feature On Section Ends--*/
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);

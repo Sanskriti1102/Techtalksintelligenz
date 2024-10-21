@@ -11828,7 +11828,6 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: blue;
 }
 
 a:hover,
@@ -11849,13 +11848,12 @@ h5,
 .h4,
 .h5 {
   line-height: 1.5;
-  /* color: white; */
   font-weight: 400;
 }
-
+/* 
 .text-primary {
   color: blue !important;
-}
+} */
 
 .ftco-navbar-light {
   background: transparent !important;
@@ -12651,13 +12649,11 @@ h5,
 .btn.btn-primary {
   background: blue;
   border: 1px solid blue !important;
-  color: #000000 !important;
 }
 
 .btn.btn-primary:hover {
   border: 1px solid blue !important;
   background: blue !important;
-  color: #000000 !important;
 }
 
 .btn.btn-primary.btn-outline-primary {

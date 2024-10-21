@@ -27,9 +27,7 @@ $secondary: #a0f669;
     transition:         all $transition ease;
 }
 
-html {
-	// overflow-x: hidden;
-}
+
 body {
 	font-family: $font-primary;
 	background: $black;
@@ -180,7 +178,7 @@ h1, h2, h3, h4, h5,
 					@include border-radius(5px);
 					span {
 						display: inline-block;
-						color: $white;
+						// color: $white;
 					}
 					&:hover{
 						background: $primary;
@@ -1189,16 +1187,13 @@ textarea.form-control {
 //ABOUT
 .about-author{
 	@include border-radius(5px);
-	img{
-	}
+	
 	.desc{
 		h3{
 			font-size: 24px;
 		}
 	}
-	.bio{
-
-	}
+	
 }
 
 
@@ -1430,6 +1425,7 @@ textarea.form-control {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out; 
   -moz-transition: all 0.3s ease-out; 
   -o-transition: all 0.3s ease-out; 
@@ -1458,10 +1454,6 @@ textarea.form-control {
 .ftco-counter {
 	@include media-breakpoint-down(lg){
 		background-position: center center !important;
-	}
-	.icon{
-		span{
-		}
 	}
 	.block-18{
 		display: block;
@@ -1586,16 +1578,7 @@ textarea.form-control {
 
 .block-6 {
 	margin-bottom: 40px;
-	.icon {
-		span {
-			&:before {
-			}
-		}
-	}
 	.media-body {
-		.heading {
-
-		}
 		p {
 			font-size: 16px;
 		}
@@ -1638,7 +1621,7 @@ textarea.form-control {
 			a{
 				color: lighten($black,10%);
 			}
-			span{}
+		
 		}
 	}
 	.box{
@@ -1683,7 +1666,7 @@ textarea.form-control {
 			a{
 				color: $white;
 			}
-			span{}
+			
 		}
 	}
 	.contact-form{
@@ -1703,9 +1686,6 @@ textarea.form-control {
 		box-shadow: none!important;
 		font-size: 15px;
 	}
-	#map {
-	}
-
 }
 
 
@@ -1899,7 +1879,7 @@ textarea.form-control {
 				position: absolute;
 				right: 0;
 				top: 0;
-				color: #ccc;
+				// color: #ccc;
 			}
 			&:hover, &:focus{
 				color: $primary;

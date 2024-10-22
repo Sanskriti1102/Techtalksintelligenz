@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/testimonial.css">
+
+</head>
+
+<style>
+    .slider {
+        position: relative;
+        margin-top: 30px;
+        width: 100%;
+        height: 550px;
+        /* Increased height */
+        overflow: hidden;
+    }
+
+    .main {
+        margin-top: 130px;
+        overflow: hidden;
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+
+        .slider p,
+        .slider h2,
+        .slider .job-title,
+        .slider .location {
+            color: #000000;
+            /* Ensure all text is light */
+        }
+
+        .slider .stars {
+            color: #ffd700;
+            /* Bright gold color for stars */
+        }
+    }
+
+
+    .item {
+        position: absolute;
+        width: 350px;
+        height: 500px;
+        text-align: justify;
+        background: linear-gradient(45deg, navy, dodgerblue) !important;
+        border-radius: 10px;
+        padding: 20px;
+        transition: 0.5s;
+        left: calc(50% - 175px);
+        top: 0;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #next,
+    #prev {
+        position: absolute;
+        top: 30%;
+        color: #fff;
+        background: none;
+        border: none;
+        font-size: xxx-large;
+        font-family: monospace;
+        font-weight: bold;
+        opacity: 0.8;
+        transition: opacity 0.5s;
+        z-index: 10;
+        background: linear-gradient(45deg, navy, dodgerblue);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    #next {
+        right: 50px;
+    }
+
+    #prev {
+        left: 50px;
+    }
+
+    #prev:hover,
+    #next:hover {
+        opacity: 8;
+    }
+
+
+
+
+
+    .item img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .item img:hover {
+        transform: scale(1.1);
+    }
+
+    .item h2 {
+        margin: 0 0 10px 0;
+        font-size: 1.2em;
+    }
+
+
+    .item p {
+        text-align: justify;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    .stars {
+        color: #ffd700;
+        font-size: 1.6em;
+        margin-top: auto;
+    }
+
+    .item .job-title {
+        color: #007BFF;
+        font-weight: bold;
+        margin: 0 0 5px 0;
+    }
+
+    .item .location {
+        color: #000408;
+        font-style: italic;
+        margin: 0 0 15px 0;
+    }
+
+    .gradient-text {
+        font-size: 2rem;
+        font-weight: bold;
+        background: linear-gradient(45deg, navy, dodgerblue);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .main h1 {
+        position: absolute;
+        top: 60px;
+        left: 25%;
+        font-size: 7vw;
+        color: rgba(255, 255, 255, 0.1);
+        font-weight: 900;
+        opacity: 0.4;
+        z-index: -1;
+        text-align: center;
+    }
+
+    .testimonialHeading {
+        position: relative;
+        bottom: 27px;
+        left: 37%;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .main {
+            margin-top: 40px;
+        }
+
+        .main h1 {
+            top: 78px;
+            left: 12%;
+            font-size: 12vw;
+        }
+
+        .testimonialHeading {
+            bottom: 0px;
+            left: 31%;
+            font-size: 2rem;
+        }
+
+        #next,
+        #prev {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        #next {
+            right: 5px;
+        }
+
+        #prev {
+            left: 5px;
+        }
+
+        .item {
+            width: 300px;
+            height: 390px;
+            left: calc(50% - 150px);
+        }
+
+        .item p {
+            font-size: 0.7rem;
+        }
+
+        .ftco-section {
+            padding: 0px !important;
+        }
+
+    }
+</style>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <img src="../images/LOGO.png" id="web-logo">
+            <a class="navbar-brand" href="index.html"> IntelligenZ</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="/index.html" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="/index.html" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="/index.html" class="nav-link"><span>We Feature on</span></a></li>
+                    <li class="nav-item"><a href="/index.html" class="nav-link"><span>Domains</span></a></li>
+                    <li class="nav-item"><a href="/index.html" class="nav-link"><span>Our Blog</span></a></li>
+                    <li class="nav-item"><a href="/index.html" class="nav-link"><span>Contact</span></a></li>
+                    <li class="nav-item"><a href="/testimonial/testimonial.html"
+                            class="nav-link"><span>Testimonial</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main">
+        <h1 class="big big-2 gradient-text">Testimonial</h1>
+
+        <h2 class="testimonialHeading">Testimonial</h2>
+
+
+        <div class="slider">
+
+            <div class="item">
+                <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="Aarohi Sharma">
+                <div class="stars">★★★★★</div>
+                <p>"Tech Talks X IntelligenZ has been a vital resource for my growth in the tech industry. The
+                    insightful
+                    articles and the community-driven approach have truly enriched my learning experience."</p>
+                <h2>- Aarohi Sharma</h2>
+            </div>
+
+            <div class="item">
+                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Rohit Verma">
+                <div class="stars">★★★★☆</div>
+                <p>"Being a part of Tech Talks X IntelligenZ has been transformative. The events and webinars have kept
+                    me
+                    up-to-date with cutting-edge technologies and innovations. A great platform for tech enthusiasts!"
+                </p>
+                <h2>- Rohit Verma</h2>
+            </div>
+
+            <div class="item">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Meera Kapoor">
+                <div class="stars">★★★★★</div>
+                <p>"I have gained invaluable insights from the knowledge hub on Tech Talks X IntelligenZ. The articles
+                    and
+                    blogs have been excellent for enhancing my understanding of artificial intelligence and machine
+                    learning."</p>
+                <h2>- Meera Kapoor</h2>
+            </div>
+
+            <div class="item">
+                <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Vikram Patel">
+                <div class="stars">★★★★★</div>
+                <p>"Tech Talks X IntelligenZ has brought together a diverse and knowledgeable community. I’ve learned so
+                    much from the resources here, which have been crucial for my personal and professional growth."</p>
+                <h2>- Vikram Patel</h2>
+            </div>
+
+            <div class="item">
+                <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="Nisha Gupta">
+                <div class="stars">★★★★★</div>
+                <p>"The platform's focus on innovation and knowledge-sharing has helped me stay ahead of the curve in
+                    technology. I am grateful for the support and insights provided by Tech Talks X IntelligenZ."</p>
+                <h2>- Nisha Gupta</h2>
+            </div>
+
+            <button id="next">Next</button>
+            <button id="prev">Prev</button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">About</h2>
+                        <p>We delve into pioneering domains within intelligent computing, providing deep
+                            insights into
+                            the latest advancements and cutting-edge technologies.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="https://x.com/IntelligenZ_OP">
+                                    <span>
+                                        <i class="fa-brands fa-x-twitter" style="font-size: 26px;"></i>
+                                    </span>
+                                </a></li>
+                            <li class="ftco-animate"><a
+                                    href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"><span
+                                        class="fab fa-youtube"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/intelligenz_op/"><span
+                                        class="icon-instagram"></span></a></li>
+                            <div id="google_element" class="google-translate-container"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                            <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                            <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Domains</a>
+                            </li>
+                            <!-- <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li> -->
+                            <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Domains</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Artificial
+                                    Intelligence</a>
+                            </li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>CyberSecurity</a>
+                            </li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Nature Inspired
+                                    Computing</a></li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Ubiquitous
+                                    Computing</a>
+                            </li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Bayesian
+                                    Computing</a></li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Intelligent Security
+                                    Systems</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have any Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span
+                                        class="text">Mumbai,Maharashtra</span></li>
+                                <!-- <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
+											210</span></a></li> -->
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">
+                                            intelligenz0212@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | <a
+                            href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"
+                            target="_blank">IntelligenZ</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+
+
+        let items = document.querySelectorAll('.slider .item');
+        let active = 0;
+
+        function loadShow() {
+            items[active].style.transform = `none`;
+            items[active].style.zIndex = 1;
+            items[active].style.filter = 'none';
+            items[active].style.opacity = 1;
+
+            // show after the active one
+            let stt = 0;
+            for (var i = active + 1; i < items.length; i++) {
+                stt++;
+                items[i].style.transform = `translateX(${120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
+                items[i].style.zIndex = 0;
+                items[i].style.filter = 'blur(5px)';
+                items[i].style.opacity = stt > 2 ? 0 : 0.6;
+            }
+
+            // show before the active one
+            stt = 0;
+            for (var i = (active - 1); i >= 0; i--) {
+                stt++;
+                items[i].style.transform = `translateX(${-120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
+                items[i].style.zIndex = 0;
+                items[i].style.filter = 'blur(5px)';
+                items[i].style.opacity = stt > 2 ? 0 : 0.6;
+            }
+        }
+
+        // Function to go to the next item automatically
+        function autoScroll() {
+            active = active + 1 < items.length ? active + 1 : 0; // Loop back to the first item
+            loadShow();
+        }
+
+        // Set interval for automatic scrolling every 3 seconds
+        setInterval(() => {
+            autoScroll();
+        }, 3000);
+
+        let next = document.getElementById('next');
+        let prev = document.getElementById('prev');
+        next.style.display = 'block';
+        prev.style.display = 'block';
+
+        next.onclick = function () {
+            active = active + 1 < items.length ? active + 1 : 0; // Loop back to the first item
+            loadShow();
+        };
+
+        prev.onclick = function () {
+            active = active - 1 >= 0 ? active - 1 : items.length - 1; // Loop back to the last item
+            loadShow();
+        };
+
+    </script>
+</body>
+
+</html>

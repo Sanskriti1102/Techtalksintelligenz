@@ -144,6 +144,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 [tabindex="-1"]:focus {
@@ -175,7 +176,7 @@ p {
 #web-logo{
   height: 60px;
   width: 55px;
-  margin-right: 15px;
+  margin-right: 0px;
   margin-bottom: 3px;
 }
 
@@ -4930,21 +4931,22 @@ input[type="button"].btn-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /* -ms-flex-wrap: wrap;
+  flex-wrap: wrap; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 0;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;

@@ -91,6 +91,41 @@ Make sure you have the following installed:
   
 
    You should now be able to access the website on `http://localhost:3000`.
+   ## Troubleshooting
+
+If you encounter issues while working with the **Tech Talks X IntelligenZ** website, please refer to the following common problems and their solutions:
+
+### Installation Errors
+- **Issue**: Errors during the `npm install` process.
+  - **Solution**: Ensure you have the latest version of Node.js installed. Check if you have a stable internet connection. If the issue persists, try clearing the npm cache using `npm cache clean --force`.
+
+### Server Not Starting
+- **Issue**: The server fails to start after running `npm start`.
+  - **Solution**: 
+    - Verify that MongoDB is running.
+    - Ensure there are no port conflicts; the default port is 3000. You can check if another process is using the port with the command `lsof -i :3000`.
+
+### API Not Responding
+- **Issue**: The API returns errors or does not respond.
+  - **Solution**: 
+    - Check if the backend server is running.
+    - Review the API endpoint URLs for correctness.
+    - If using a local MongoDB instance, ensure your database is properly set up and accessible.
+
+### Common Error Codes
+- **Error 404**: Not Found
+  - **Solution**: Ensure you are using the correct URL for the API endpoint or webpage.
+
+- **Error 500**: Internal Server Error
+  - **Solution**: Check the server logs for more details about the error. It may indicate issues with the backend logic or database connection.
+
+### General Tips
+- Always read the error messages carefully; they often provide clues about the problem.
+- Search online for specific error messages to find solutions shared by other developers.
+- Restart your development environment to clear temporary issues.
+
+### Need More Help?
+If you’re still having trouble, feel free to reach out to us through [GitHub Issues](https://github.com/Sanskriti1102/Techtalksintelligenz/issues).
 
 ## Colour Scheme for the Website
 

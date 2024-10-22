@@ -22,15 +22,15 @@
 
 		gtag('config', 'AW-16672098785');
 
-		
+
 		const video = document.getElementById('myVideo');
 		video.addEventListener('ended', () => {
 			video.pause();
 			video.currentTime = video.duration; // This will stop it at the last frame
 		});
 	</script>
-	
-	
+
+
 	<title>IntelligenZ</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -59,6 +59,7 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/googleTranslator.css">
+	<link rel="stylesheet" href="css/backToTop.css">
 	<style>
 		body {
 			cursor: none;
@@ -440,8 +441,8 @@
 				<source src="./video/Computing.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
-			
-			
+
+
 			<div class="overlay"></div>
 			<div class="content">
 				<h1 class="hero-heading">
@@ -1169,7 +1170,7 @@
 		</div>
 	</footer>
 
-
+	<button id="backToTop" class="back-to-top-button">↑</button>
 
 	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -1179,7 +1180,7 @@
 		</svg></div>
 
 
-
+	<script src="/js/backToTop.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>

@@ -14259,3 +14259,19 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #212121; /* background of the scrollbar track */
+  border-radius: 10px;
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #0056b3; /* color of the scrollbar thumb */
+  border-radius: 10px; /* round edges */
+  border: 2px solid #f1f1f1; /* adds space around the thumb */
+}

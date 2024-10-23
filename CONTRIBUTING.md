@@ -46,7 +46,7 @@ npm -v
 # Project Structure 📂
 
 ```bash
-Project-Guidance/
+TECHTALKSINTELLIGENZ/
 ├── .github/                  # GitHub-related configurations such as workflows, issue templates, etc
 │   
 ├── .vscode/                  # Settings file of the project

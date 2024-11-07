@@ -166,3 +166,8 @@ For more information or questions, you can contact the project admin:
 <a href="https://github.com/Sanskriti1102/Techtalksintelligenz/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Sanskriti1102/Techtalksintelligenz" />
 </a>
+
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

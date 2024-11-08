@@ -1,13 +1,19 @@
-const nodemailer = require("nodemailer");
-const { google } = require("googleapis");
-const path = require("path");
-const fs = require("fs");
+import nodemailer from "nodemailer";
+import { google } from "googleapis";
+import path from "path";
+import fs from "fs";
 
+// Define SCOPES for the Google Sheets API
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"];
-const spreadsheetId = "1r60v-ydSCpLIq6Ub3jfzWiFwDWvtHR0qsQmo3CM7rPQ"; // Your actual Google Sheet ID
-const sheetName = "Responses"; // Ensure this matches the exact name of your Google Sheet
 
-async function SendEmail(req, resp) {
+// Google Sheets ID
+const spreadsheetId = "1r60v-ydSCpLIq6Ub3jfzWiFwDWvtHR0qsQmo3CM7rPQ"; // Your actual Google Sheet ID
+
+// Ensure the sheet name matches the actual sheet name in your Google Sheets file
+const sheetName = "Responses";
+
+
+export async function sendEmail(req, resp) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -27,7 +33,6 @@ async function SendEmail(req, resp) {
     `,
   };
 
-  // Step 2: Send the email
   transporter.sendMail(mailOptions, async (error, info) => {
     if (error) {
       console.log("Error sending email: " + error);
@@ -35,21 +40,19 @@ async function SendEmail(req, resp) {
     } else {
       console.log("Email sent: " + info.response);
 
-      // Step 3: Authenticate with Google Sheets API using service account
       try {
         const auth = new google.auth.GoogleAuth({
           credentials: JSON.parse(
-            fs.readFileSync(path.join(__dirname, "googleauth.json")) // Path to your service account JSON file
+            fs.readFileSync(path.join(__dirname, "googleauth.json"))
           ),
           scopes: SCOPES,
         });
 
         const sheets = google.sheets({ version: "v4", auth });
 
-        // Step 4: Append form data to Google Sheet
         const request = {
           spreadsheetId,
-          range: `${sheetName}!A1`, // Starting point
+          range: `${sheetName}!A1`,
           valueInputOption: "RAW",
           insertDataOption: "INSERT_ROWS",
           resource: {
@@ -78,4 +81,4 @@ async function SendEmail(req, resp) {
   });
 }
 
-module.exports = { SendEmail };
+export default sendEmail;

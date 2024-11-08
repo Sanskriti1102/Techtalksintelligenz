@@ -1067,6 +1067,102 @@
 					<h1 class="big big-2 gradient-text">Contact</h1><br><br>
 					<h2 class="mb-4">Contact Us</h2>
 					<p></p>
+					<form id="contactForm">
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" class="form-control" id="name" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email" required>
+						</div>
+						<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea class="form-control" id="message" rows="4" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+			
+					<!-- Success Message -->
+					<div id="successMessage" class="alert alert-success mt-3" style="display:none;">
+						Thank you for getting in touch! We'll respond shortly.
+					</div>
+				</div>
+			</div>
+			
+			<!-- JavaScript for handling form submission -->
+			<script>
+				document.getElementById('contactForm').addEventListener('submit', function(event) {
+					event.preventDefault(); // Prevent the default form submission
+			
+					// Display success message
+					document.getElementById('successMessage').style.display = 'block';
+			
+					// Clear the form fields
+					document.getElementById('contactForm').reset();
+				});
+			</script>
+			<style>
+				/* Form Styles */
+				#contactForm {
+					background-color: #f8f9fa; /* Keep the light background for the form */
+					border-radius: 15px; /* More pronounced rounded corners */
+					padding: 30px; /* Increased padding for a spacious feel */
+					box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+					transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+				}
+			
+				/* Form Shadow Effect on Hover */
+				#contactForm:hover {
+					box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+				}
+			
+				/* Input Fields */
+				.form-control {
+					border-radius: 25px; /* Rounded corners */
+					border: 1px solid #ced4da; /* Light grey border */
+					transition: border-color 0.3s ease; /* Smooth border color transition */
+					padding: 15px; /* Increased padding inside input */
+					font-size: 16px; /* Larger font for better readability */
+				}
+			
+				/* Input Focus Effect */
+				.form-control:focus {
+					border-color: #007bff; /* Blue border on focus */
+					box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+					outline: none; /* Remove default outline */
+				}
+			
+				/* Button Styles */
+				.btn-primary {
+					background-color: #007bff; /* Bootstrap primary color */
+					border: none; /* Remove default border */
+					border-radius: 25px; /* Rounded corners */
+					padding: 12px 20px; /* Increased padding for a better clickable area */
+					font-size: 16px; /* Larger font size */
+					transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+				}
+			
+				/* Button Hover Effect */
+				.btn-primary:hover {
+					background-color: #0056b3; /* Darker blue on hover */
+					transform: translateY(-2px); /* Slight lift effect on hover */
+					box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+				}
+			
+				/* Alert Styles */
+				.alert {
+					background-color: #d4edda; /* Light green background for success alert */
+					border-color: #c3e6cb; /* Green border for alert */
+					color: #155724; /* Dark green text color */
+					border-radius: 10px; /* Rounded corners */
+					padding: 15px; /* Padding inside alert */
+					transition: opacity 0.5s ease; /* Smooth opacity transition */
+					display: none; /* Initially hidden */
+				}
+			</style>
+			
+			
 				</div>
 			</div>
 

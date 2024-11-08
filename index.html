@@ -2,35 +2,48 @@
 <html lang="en">
 
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-P6HT2DBC');</script>
-	<!-- End Google Tag Manager -->
-
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6HT2DBC');</script>
+<!-- End Google Tag Manager -->
+	
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16672098785"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16672098785"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-		gtag('config', 'AW-16672098785');
+  gtag('config', 'AW-16672098785');
 
+  
+</script>
+<script> 
+	function lightMode() {
+			document.getElementById("theme-switch").style.backgroundColor = "white";
+			document.getElementById("theme-switch").style.color = "black";	
+}
+	function darkMode() {
+			document.getElementById("theme-switch").style.backgroundColor = "black";
+			document.getElementById("theme-switch").style.color = "white";	
+}
 
-		const video = document.getElementById('myVideo');
-		video.addEventListener('ended', () => {
-			video.pause();
-			video.currentTime = video.duration; // This will stop it at the last frame
-		});
-	</script>
+let isDarkMode = false;
 
-
+function mode() {
+	if (isDarkMode) {
+		darkMode();
+	}else{
+		lightMode();
+	}
+	isDarkMode = !isDarkMode;
+}
+lightMode();
+  </script>
+ 
 	<title>IntelligenZ</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -62,49 +75,41 @@
 	<link rel="stylesheet" href="css/backToTop.css">
 	<style>
 		body {
-			cursor: none;
-			/* Hide the default cursor */
-		}
+  cursor: none; /* Hide the default cursor */
+}
 
-		.fairy-dust {
-			position: absolute;
-			pointer-events: none;
-			z-index: 9999;
-			width: 15px;
-			height: 15px;
-			background: none;
-			opacity: 0;
-			transition: opacity 0.2s ease-in-out;
-		}
+.fairy-dust {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  width: 15px;
+  height: 15px;
+  background: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
 
-		.fairy-dust::before {
-			content: '★';
-			/* Unicode for star */
-			font-size: 35px;
-			background: linear-gradient(45deg, navy, dodgerblue);
-			/* Gradient from blue to white */
-			-webkit-background-clip: text;
-			/* Clip background to text */
-			-webkit-text-fill-color: transparent;
-			/* Make text transparent to show the gradient */
-			background-clip: text;
-			/* Standard background clip for text */
-			text-fill-color: transparent;
-			/* Standard text fill for gradient */
-		}
+.fairy-dust::before {
+  content: '★'; /* Unicode for star */
+  font-size: 35px;
+  background: linear-gradient(45deg, navy, dodgerblue); /* Gradient from blue to white */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show the gradient */
+  background-clip: text; /* Standard background clip for text */
+  /* text-fill-color: transparent; Standard text fill for gradient */
+}
 
-		/* Animation for star dust */
-		@keyframes sparkle {
-			0% {
-				transform: translate(0, 0) scale(1);
-				opacity: 1;
-			}
-
-			100% {
-				transform: translate(0, -30px) scale(0.5);
-				opacity: 0;
-			}
-		}
+/* Animation for star dust */
+@keyframes sparkle {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, -30px) scale(0.5);
+    opacity: 0;
+  }
+}
 
 		.video-container {
 			position: relative;
@@ -128,7 +133,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			color: white;
+			/* color: white; */
 			text-align: center;
 			z-index: 1;
 		}
@@ -161,11 +166,11 @@
 			font-weight: bold;
 			background: linear-gradient(45deg, navy, dodgerblue);
 			-webkit-background-clip: text;
+			background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
-
-		.branding-tagline {
-			color: navy;
+		.branding-tagline{
+			/* color:navy ; */
 			background-color: white;
 			display: block;
 			font-size: 3rem;
@@ -173,17 +178,15 @@
 			padding-inline: 10px;
 		}
 
-
+		
 		@media (max-width: 992px) {
 			.hero-heading {
 				font-size: 3.5rem !important;
 			}
-
-			.branding-tagline {
+			.branding-tagline{
 				font-size: 2rem;
 			}
 		}
-
 		.gradient-background {
 			background: linear-gradient(45deg, navy, dodgerblue) !important;
 			/* width: 100%;
@@ -192,7 +195,7 @@
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			color: transparent;
+			/* color: transparent; */
 			-webkit-background-clip: text;
 			background-clip: text;
 		}
@@ -273,10 +276,10 @@
 			transition: color 0.3s ease-in-out;
 		}
 
-		.resume-wrap:hover h2 {
+		/* .resume-wrap:hover h2 {
 			color: #1da1f2;
-			/* Twitter's blue color */
-		}
+			 Twitter's blue color 
+		} */
 
 		/* Base styles for the box */
 		.box {
@@ -303,9 +306,9 @@
 		}
 
 		/* Hover effect for the icon */
-		.box:hover .icon {
+		/* .box:hover .icon {
 			color: white;
-		}
+		} */
 
 		.icon span {
 			font-size: 40px;
@@ -319,13 +322,13 @@
 		}
 
 		.box:hover h3,
-		.box:hover p a {
+		/* .box:hover p a {
 			color: white;
-		}
+		} */
 
 		/* Base styles for the list item and link */
 		li a {
-			color: inherit;
+			/* color: inherit; */
 			/* Ensure the link inherits the color */
 			text-decoration: none;
 			/* Remove the default underline */
@@ -350,23 +353,34 @@
 			/* Change the icon color to match the text color on hover */
 		}
 	</style>
+	<!-- <script type="text/javascript" src="js/darkmode.js" defer></script> -->
 </head>
 
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body id="theme-switch" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6HT2DBC" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6HT2DBC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-	<div class="fairy-dust"></div>
+<div class="fairy-dust"></div>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+			<button onclick="mode()" id="theme-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EAC452"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+				
+
+				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+			</button>
+			<img src="images\LOGO.png"  id="web-logo"     >
+			<a class="navbar-brand" href="index.html"> IntelligenZ</a>
+
 		<div class="container">
 			<div style="display: flex;align-items: center;">
 				<img src="images\LOGO.png" id="web-logo">
 				<a class="navbar-brand" href="index.html"> IntelligenZ</a>
 			</div>
 			
+
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> 
@@ -445,12 +459,10 @@
 			</div>
 		</div> -->
 		<div class="video-container">
-			<video id="myVideo" autoplay muted>
+			<video autoplay muted loop>
 				<source src="./video/Computing.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
-
-
 			<div class="overlay"></div>
 			<div class="content">
 				<h1 class="hero-heading">
@@ -473,7 +485,7 @@
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
 						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/without\ bg\ LOGO.png); width: 70%;">
+							style="background-image:url(images/without\ bg\ logo.png); width: 100%;">
 						</div>
 					</div>
 				</div>
@@ -482,24 +494,15 @@
 						<div class="col-md-12 heading-section ftco-animate">
 							<h1 class="big gradient-text">About</h1><br><br>
 							<h2 class="mb-4 ">About Us</h2>
-							<p>Explore the Tech with Tech Talks X IntelligenZ - your go-to channel for expert insights
-								on AI, Cybersecurity,
+							<p>Explore the Tech with Tech Talks X IntelligenZ - your go-to channel for expert insights on AI, Cybersecurity,
 								Nature Inspired Computing, Ubiquitous Computing, and cutting-edge intelligent computing
 								technologies.</p>
 							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-sm-flex"><span>Name:</span>
-									<p>IntelligenZ</p>
-								</li>
-								<li class="d-sm-flex"><span>Date of birth:</span>
-									<p>June 06, 2024</p>
-								</li>
-								<li class="d-sm-flex"><span>Address:</span>
-									<p>Mumbai, Maharashtra</p>
-								</li>
+								<li class="d-sm-flex"><span >Name:</span> <p>IntelligenZ</p></li>
+								<li class="d-sm-flex"><span>Date of birth:</span> <p>June 06, 2024</p></li>
+								<li class="d-sm-flex"><span>Address:</span> <p>Mumbai, Maharashtra</p></li>
 								<!-- <li class="d-flex"><span>Zip code:</span> <span>1000</span></li> -->
-								<li class="d-sm-flex"><span>Email:</span>
-									<p>intelligenz0212@gmail.com</p>
-								</li>
+								<li class="d-sm-flex"><span>Email:</span> <p>intelligenz0212@gmail.com</p></li>
 								<!-- <li class="d-flex"><span>Phone: </span> <span>+1-2234-5678-9-0</span></li> -->
 							</ul>
 						</div>
@@ -510,12 +513,13 @@
 								<!-- <span class="gradient-text number" 
 								data-number="15"
 								>60+</span> -->
-								<span class="gradient-text number">60+</span>
+								<span class="gradient-text number" 
+								>60+</span>
 								<span>Subscribers</span>
 							</p>
 							<p><a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"
 									class="gradient-background btn btn-primary py-3  px-3"
-									style="border-color: #005;color: aliceblue !important;">View Channel</a></p>
+									style="border-color: #005;">View Channel</a></p>
 						</div>
 					</div>
 				</div>
@@ -523,164 +527,99 @@
 		</div>
 	</section>
 
-    	<!-------We Feature On Section-------------->
-		<section class="ftco-section ftco-no-pb" id="resume-section">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-					<div class="col-md-10 heading-section text-center ftco-animate">
-						<h1 class="big big-2 gradient-text">We Feature On</h1><br><br>
-						<h2 class="mb-4">We Feature On</h2>
-						<p>Explore the Tech with Tech Talks X IntelligenZ! We explore the exciting world of Intelligent
-							Computing, covering AI,
-							Cybersecurity, Nature Inspired Computing, and more. Stay informed and empowered with our expert
-							insights and in-depth content on cutting-edge technologies. Join us to stay ahead in the
-							fast-evolving tech landscape!</p>
-					</div>
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2 gradient-text">We Feature On</h1><br><br>
+					<h2 class="mb-4">We Feature On</h2>
+					<p>Explore the Tech with Tech Talks X IntelligenZ! We explore the exciting world of Intelligent Computing, covering AI,
+						Cybersecurity, Nature Inspired Computing, and more. Stay informed and empowered with our expert
+						insights and in-depth content on cutting-edge technologies. Join us to stay ahead in the
+						fast-evolving tech landscape!</p>
 				</div>
-	
-				<div class="social-card-container">
-					<!-- WhatsApp Card -->
-					<a href="https://whatsapp.com/channel/0029VagNDnxHQbRwK3aLU90U" target="_blank" rel="noopener noreferrer" class="social-card whatsapp-card">
-						<div class="social-overlay"></div>
-						<div class="social-circle">
-							<div class="social-icon-container">
-								<i class="fab fa-whatsapp" style="font-size: 52px;"></i>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap">
+						<a href="https://whatsapp.com/channel/0029VagNDnxHQbRwK3aLU90U">
+							<!-- <span class="date">2014-2015</span> -->
+							<div class="icon">
+								<i class="fab fa-whatsapp gradient-text" style="font-size: 50px;"></i>
 							</div>
-						</div>
-						<p>WhatsApp</p>
-						<div class="social-hover-text">
-							Join our WhatsApp Channel for instant updates and discussions.
-						</div>
-					</a>
-				
-					<!-- Instagram Card -->
-					<a href="https://www.instagram.com/intelligenz_op/" target="_blank" rel="noopener noreferrer" class="social-card instagram-card">
-						<div class="social-overlay"></div>
-						<div class="social-circle">
-							<div class="social-icon-container">
-								<i class="fab fa-instagram" style="font-size: 48px;"></i>
-							</div>
-						</div>
-						<p>Instagram</p>
-						<div class="social-hover-text">
-							Follow us on Instagram for behind-the-scenes content and updates.
-						</div>
-					</a>
-				
-					<!-- YouTube Card -->
-					<a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" target="_blank" rel="noopener noreferrer" class="social-card youtube-card">
-						<div class="social-overlay"></div>
-						<div class="social-circle">
-							<div class="social-icon-container">
-								<i class="fab fa-youtube" style="font-size: 50px;"></i>
-							</div>
-						</div>
-						<p>YouTube</p>
-						<div class="social-hover-text">
-							Subscribe to our YouTube channel for the latest videos and tutorials.
-						</div>
-					</a>
-				
-					<!-- Twitter Card -->
-					<a href="https://x.com/IntelligenZ_OP" target="_blank" rel="noopener noreferrer" class="social-card twitter-card">
-						<div class="social-overlay"></div>
-						<div class="social-circle">
-							<div class="social-icon-container">
-								<i class="fa-brands fa-x-twitter" style="font-size: 46px;"></i>
-							</div>
-						</div>
-						<p>Twitter</p>
-						<div class="social-hover-text">
-							Follow us on Twitter for real-time updates and conversations.
-						</div>
-					</a>
-				</div>
-				
-				<!-- Join Us Button -->
-				<div class="join-us-container row justify-content-center align-items-center mt-5">
-					<div class="col-md-6 text-center ftco-animate">
-						<p>
-							<a style="color: white !important;" 
-							   href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" 
-							   class="center-button gradient-background btn btn-primary py-4 mx-auto d-block">Join Now
-							</a>
-						</p>
+							<h2>WhatsApp</h2>
+							<p class="mt-4">Join our WhatsApp Channel for instant updates and
+								discussions.</p>
+						</a>
 					</div>
+					<div class="resume-wrap ">
+						<a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww">
+							<!-- <span class="date">2014-2015</span> -->
+							<div class="icon">
+								<i class="fab fa-youtube gradient-text" style="font-size: 50px;"></i>
+							</div>
+							<h2>YouTube</h2>
+							<p class="mt-4">Subscribe to our YouTube channel for the latest
+								videos and tutorials.</p>
+						</a>
+					</div>
+
 				</div>
 
-				<!-- <div class="row">
-					<div class="col-md-6">
-						<div class="resume-wrap ftco-animate">
-							<a href="https://whatsapp.com/channel/0029VagNDnxHQbRwK3aLU90U">-->
-								 <!--<span class="date">2014-2015</span>-->
-								<!--<div class="icon">
-									<i class="fab fa-whatsapp gradient-text" style="font-size: 50px;"></i>
-								</div>
-								<h2>WhatsApp</h2>
-								<p class="mt-4" style="color: aliceblue;">Join our WhatsApp Channel for instant updates and
-									discussions.</p>
-							</a>
+				<div class="col-md-6">
+					<!-- <div class="resume-wrap ftco-animate">
+						<a href="https://whatsapp.com/channel/0029VagNDnxHQbRwK3aLU90U">
+						<span class="date">2014-2015</span> 
+						<div class="icon">
+							<i class="fab fa-linkedin gradient-text" style="font-size: 50px;"></i>
 						</div>
-						<div class="resume-wrap ftco-animate">
-							<a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww">-->
-								 <!--<span class="date">2014-2015</span>-->
-								<!--<div class="icon">
-									<i class="fab fa-youtube gradient-text" style="font-size: 50px;"></i>
-								</div>
-								<h2>YouTube</h2>
-								<p class="mt-4" style="color: aliceblue;">Subscribe to our YouTube channel for the latest
-									videos and tutorials.</p>
-							</a>
-						</div>
-	
-					</div>
-	
-					<div class="col-md-6">
-						 <div class="resume-wrap ftco-animate">
-							<a href="https://whatsapp.com/channel/0029VagNDnxHQbRwK3aLU90U">-->
-							<!--<span class="date">2014-2015</span>-->
-							<!--<div class="icon">
-								<i class="fab fa-linkedin gradient-text" style="font-size: 50px;"></i>
+						<h2>LinkedIn</h2>
+						<p class="mt-4" style="color: aliceblue;">Connect with us on LinkedIn to stay updated with professional news and insights.</p>
+					</a>
+					</div> -->
+					<div class="resume-wrap">
+						<a href="https://www.instagram.com/intelligenz_op/">
+							<!-- <span class="date">2014-2015</span> -->
+							<div class="icon">
+								<i class="fab fa-instagram gradient-text" style="font-size: 50px;"></i>
 							</div>
-							<h2>LinkedIn</h2>
-							<p class="mt-4" style="color: aliceblue;">Connect with us on LinkedIn to stay updated with professional news and insights.</p>
+							<h2>Instagram</h2>
+							<p class="mt-4">Follow us on Instagram for behind-the-scenes
+								content and updates.</p>
 						</a>
-						</div>
-						<div class="resume-wrap ftco-animate">
-							<a href="https://www.instagram.com/intelligenz_op/">-->
-								 <!--<span class="date">2014-2015</span>-->
-								<!--<div class="icon">
-									<i class="fab fa-instagram gradient-text" style="font-size: 50px;"></i>
-								</div>
-								<h2>Instagram</h2>
-								<p class="mt-4" style="color: aliceblue;">Follow us on Instagram for behind-the-scenes
-									content and updates.</p>
-							</a>
-						</div>
-						<div class="resume-wrap ftco-animate">
-							<a href="https://x.com/IntelligenZ_OP">-->
-								 <!--<span class="date">2014-2015</span> -->
-								<!--<div class="icon">
-									<i class="fa-brands fa-x-twitter gradient-text" style="font-size: 50px;"></i>
-								</div>
-								<h2>Twitter</h2>
-								<p class="mt-4" style="color: aliceblue;">Follow us on Twitter for real-time updates and
-									conversations.</p>
-							</a>
-						</div>
-						<div class="resume-wrap ftco-animate">
-							<a href="https://whatsapp.com/channel/0029VagNDnxHQbRwK3aLU90U">-->
-							<!--<span class="date">2014-2015</span>-->
-							<!--<div class="icon">
-								<i class="fab fa-medium gradient-text" style="font-size: 50px;"></i>
-							</div>
-							<h2>Medium</h2>
-							<p class="mt-4" style="color: aliceblue;">Read our latest articles and stories on Medium.</p>
-						</a>
-						</div> 
 					</div>
-				</div> -->
-		<!-------We Feature On Section Ends-------------->
+					<div class="resume-wrap">
+						<a href="https://x.com/IntelligenZ_OP">
+							<!-- <span class="date">2014-2015</span> -->
+							<div class="icon">
+								<i class="fa-brands fa-x-twitter gradient-text" style="font-size: 50px;"></i>
+							</div>
+							<h2>Twitter</h2>
+							<p class="mt-4">Follow us on Twitter for real-time updates and
+								conversations.</p>
+						</a>
+					</div>
+					<!-- <div class="resume-wrap ftco-animate">
+						<a href="https://whatsapp.com/channel/0029VagNDnxHQbRwK3aLU90U">
+						<span class="date">2014-2015</span> 
+						<div class="icon">
+							<i class="fab fa-medium gradient-text" style="font-size: 50px;"></i>
+						</div>
+						<h2>Medium</h2>
+						<p class="mt-4" style="color: aliceblue;">Read our latest articles and stories on Medium.</p>
+					</a>
+					</div> -->
+				</div>
+			</div>
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ">
+					<p><a 
+							href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"
+							class="gradient-background btn btn-primary py-4 ">Join Now</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class="ftco-section" id="services-section">
 		<div class="container">
@@ -997,56 +936,37 @@
 		</div>
 	</section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img " id="section-counter">
-		<div class="container stats_container">
-			
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h2 class="mb-4">Our Stats</h2>
-					<p>Showcases the impact of Tech Talks X IntelligenZ, connecting with tech enthusiasts worldwide through views, videos, likes, and subscribers.</p>
-				</div>
-			</div>
-			<div class="row d-md-flex align-items-center stats">
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 stats_box">
+					<div class="block-18">
 						<div class="text">
-							<div class="number-container">
-								<strong class="number gradient-text" data-number="2400">0</strong>
-								<span class="plus-icon">+</span>
-							</div>
+							<strong class="number gradient-text" data-number="1500">0</strong>
 							<span>Views</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 stats_box">
+					<div class="block-18">
 						<div class="text">
-							<div class="number-container">
-								<strong class="number gradient-text" data-number="10">0</strong>
-								<span class="plus-icon">+</span>
-							</div>
+							<strong class="number gradient-text" data-number="6">0</strong>
 							<span>Videos</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 stats_box">
+					<div class="block-18">
 						<div class="text">
-							<div class="number-container">
-								<strong class="number gradient-text" data-number="125">0</strong>
-								<span class="plus-icon">+</span>
-							</div>
+							<strong class="number gradient-text" data-number="75">0</strong>
 							<span>Likes</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 stats_box">
+					<div class="block-18">
 						<div class="text">
-							<div class="number-container">
-								<strong class="number gradient-text" data-number="90">0</strong>
-								<span class="plus-icon">+</span>
-							</div>
+							<strong class="number gradient-text" data-number="60">0</strong>
 							<span>Subscribers</span>
 						</div>
 					</div>
@@ -1177,63 +1097,52 @@
 			<div class="row d-flex contact-info mb-5">
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
-						<a href="#" class="icon d-flex align-items-center justify-content-center">
+						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="gradient-text icon-map-signs"></span>
-						</a>
-						<a href="#">
-							<h3 class="mb-4">Address</h3>
-						</a>
-						<p><a href="#">Mumbai, Maharashtra</a></p>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p><a href="#"> Mumbai, Maharashtra</a></p>
 					</div>
 				</div>
-
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
-						<a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" target="_blank"
-							class="icon d-flex align-items-center justify-content-center">
-							<span class="gradient-text">
-								<i class="fab fa-youtube"></i>
-							</span>
-						</a>
-						<a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" target="_blank">
-							<h3 class="mb-4">YouTube</h3>
-						</a>
-						<p><a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"
-								target="_blank">IntelligenZ</a></p>
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="gradient-text"><i class="fab fa-youtube"></i></span>
+
+						</div>
+						<h3 class="mb-4">Youtube</h3>
+						<p><a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww">IntelligenZ</a></p>
 					</div>
 				</div>
-
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
-						<a href="mailto:intelligenz0212@gmail.com"
-							class="icon d-flex align-items-center justify-content-center">
+						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="gradient-text icon-paper-plane"></span>
-						</a>
-						<a href="mailto:intelligenz0212@gmail.com">
-							<h3 class="mb-4">Email Address</h3>
-						</a>
-						<p><a href="mailto:intelligenz0212@gmail.com">intelligenz0212@gmail.com</a></p>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto: intelligenz0212@gmail.com"> intelligenz0212@gmail.com</a></p>
 					</div>
 				</div>
-
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
-						<a href="https://intelligenz.netlify.app/" target="_blank"
-							class="icon d-flex align-items-center justify-content-center">
+						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="gradient-text icon-globe"></span>
-						</a>
-
-						<a href="https://intelligenz.netlify.app/" target="_blank">
-							<h3 class="mb-4">Website</h3>
-						</a>
-
-						<p><a href="https://intelligenz.netlify.app/" target="_blank">intelligenz.netlify.app</a></p>
+						</div>
+						<h3 class="mb-4">Website</h3>
+						<p><a href="https://intelligenz.netlify.app/">intelligenz.netlify.app</a></p>
 					</div>
 				</div>
 			</div>
+			
+<!-- Button in Top Right Corner -->
+<div class="podcast-invitation">
+    <button id="openModal" class="btn btn-white"><a href="https://docs.google.com/forms/d/e/1FAIpQLScpLC68g-_PYulE5GubBGqVQ7q674jD1Y-X4XdoytIueJP4XA/viewform" target="_blank" class="white">Join the Podcast</a></button>
+</div>
+
 
 			<!-- Button in Top Right Corner -->
 	
+
 
 
 
@@ -1277,16 +1186,16 @@
 							the latest advancements and cutting-edge technologies.</p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
 							<li class="ftco-animate"><a href="https://x.com/IntelligenZ_OP">
-									<span>
-										<i class="fa-brands fa-x-twitter" style="font-size: 26px;"></i>
-									</span>
-								</a></li>
+								<span>
+									<i class="fa-brands fa-x-twitter" style="font-size: 26px;"></i>
+								</span>
+							</a></li>
 							<li class="ftco-animate"><a
 									href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"><span
 										class="fab fa-youtube"></span></a></li>
 							<li class="ftco-animate"><a href="https://www.instagram.com/intelligenz_op/"><span
 										class="icon-instagram"></span></a></li>
-							
+
 						</ul>
 					</div>
 				</div>
@@ -1323,7 +1232,7 @@
 				</div>
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have any Questions?</h2>
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
 								<li><span class="icon icon-map-marker"></span><span
@@ -1376,10 +1285,11 @@
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" />
 		</svg></div>
+
 	<iframe src="https://www.chatbase.co/chatbot-iframe/1MR1a7tdmOzKBNEf6_QI3" width="100%"
 		style="height: 100%; min-height: 700px" frameborder="0"></iframe> -->
 
-	<script src="/js/backToTop.js"></script>
+  <script src="/js/backToTop.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -1392,7 +1302,9 @@
 	<script src="js/aos.js"></script>
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
+
 	<script src="js/main.js"></script>
+
 
 	<script>
 		window.embeddedChatbotConfig = {
@@ -1402,6 +1314,7 @@
 	</script>
 	<script src="https://www.chatbase.co/embed.min.js" chatbotId="1MR1a7tdmOzKBNEf6_QI3" domain="www.chatbase.co" defer>
 	</script>
+
 
 </body>
 

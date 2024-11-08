@@ -81,6 +81,7 @@ section {
 
 .invite-button:hover {
   background-color: blue; 
+  color: white; /* Ensure the text color changes on hover */
 }
 /* Modal Styles */
 .modal {
@@ -141,7 +142,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  /* color: #212529; */
   text-align: left;
   background-color: #fff;
   overflow-x: hidden;
@@ -249,24 +250,22 @@ sup {
 }
 
 a {
-  color: #007bff;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0056b3;
   text-decoration: underline;
 }
 
 a:not([href]):not([tabindex]) {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
 
 a:not([href]):not([tabindex]):hover,
 a:not([href]):not([tabindex]):focus {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
 
@@ -309,7 +308,6 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
   text-align: left;
   caption-side: bottom;
 }
@@ -322,7 +320,15 @@ label {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
+#theme-toggle{
+  width: 80px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 200px;
 
+}
 button {
   border-radius: 0;
 }
@@ -362,6 +368,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button:not(:disabled),
@@ -391,6 +398,7 @@ input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   -webkit-appearance: listbox;
+  appearance: listbox;
 }
 
 textarea {
@@ -413,7 +421,7 @@ legend {
   margin-bottom: .5rem;
   font-size: 1.5rem;
   line-height: inherit;
-  color: inherit;
+  /* color: inherit; */
   white-space: normal;
 }
 
@@ -429,6 +437,7 @@ progress {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -589,7 +598,7 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #6c757d;
+  /* color: #6c757d; */
 }
 
 .blockquote-footer::before {
@@ -621,7 +630,7 @@ mark,
 
 .figure-caption {
   font-size: 90%;
-  color: #6c757d;
+  /* color: #6c757d; */
 }
 
 code {
@@ -637,7 +646,7 @@ a>code {
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
-  color: #fff;
+  /* color: #fff; */
   background-color: #212529;
   border-radius: 0.2rem;
 }
@@ -2004,7 +2013,7 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  /* color: #212529; */
 }
 
 .table th,
@@ -2250,7 +2259,7 @@ pre code {
 }
 
 .table .thead-dark th {
-  color: #fff;
+  /* color: #fff; */
   background-color: #343a40;
   border-color: #454d55;
 }
@@ -2262,7 +2271,7 @@ pre code {
 }
 
 .table-dark {
-  color: #fff;
+  /* color: #fff; */
   background-color: #343a40;
 }
 
@@ -2281,7 +2290,7 @@ pre code {
 }
 
 .table-dark.table-hover tbody tr:hover {
-  color: #fff;
+  /* color: #fff; */
   background-color: rgba(255, 255, 255, 0.075);
 }
 
@@ -2578,7 +2587,7 @@ textarea.form-control {
   margin-top: .1rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  color: #fff;
+  /* color: #fff; */
   background-color: rgba(40, 167, 69, 0.9);
   border-radius: 0.25rem;
 }
@@ -11821,13 +11830,12 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: blue;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  color: blue;
+  /* color: blue; */
   outline: none !important;
 }
 
@@ -11842,13 +11850,12 @@ h5,
 .h4,
 .h5 {
   line-height: 1.5;
-  color: white;
   font-weight: 400;
 }
-
+/* 
 .text-primary {
   color: blue !important;
-}
+} */
 
 .ftco-navbar-light {
   background: transparent !important;
@@ -12644,13 +12651,11 @@ h5,
 .btn.btn-primary {
   background: blue;
   border: 1px solid blue !important;
-  color: #000000 !important;
 }
 
 .btn.btn-primary:hover {
   border: 1px solid blue !important;
   background: blue !important;
-  color: #000000 !important;
 }
 
 .btn.btn-primary.btn-outline-primary {
@@ -12744,7 +12749,7 @@ h5,
 
 .ftco-about ul.about-info li span:first-child {
   font-weight: 600;
-  color: #fff;
+  /* color: #fff; */
   width: 130px;
 }
 
@@ -12754,7 +12759,7 @@ h5,
 
 .ftco-about .counter-wrap .text p span {
   font-weight: 400;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .ftco-about .counter-wrap .text p span.number {
@@ -12776,7 +12781,6 @@ h5,
 .resume-wrap .date {
   font-weight: 900;
   font-size: 26px;
-  color: blue;
 }
 
 .resume-wrap h2 {
@@ -12818,7 +12822,7 @@ h5,
   letter-spacing: 3px;
   text-transform: uppercase;
   position: relative;
-  color: #fff;
+  color: black;
 }
 
 .services-1 .desc h3:after {
@@ -13407,6 +13411,7 @@ textarea.form-control {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -13654,13 +13659,13 @@ textarea.form-control {
 .block-27 ul li.active a,
 .block-27 ul li.active span {
   background: #a0f669;
-  color: #fff;
+  /* color: #fff; */
   border: 1px solid transparent;
 }
 
-.contact-section .contact-info p a {
+/* .contact-section .contact-info p a {
   color: #1a1a1a;
-}
+} */
 
 .contact-section .box {
   width: 100%;
@@ -13690,7 +13695,7 @@ textarea.form-control {
 }
 
 .contact-section .box .icon span {
-  color: blue;
+  /* color: blue; */
   font-size: 30px;
 }
 
@@ -13714,10 +13719,10 @@ textarea.form-control {
     height: 500px;
   }
 }
-
+/* 
 .contact-section .contact-info p a {
   color: #fff;
-}
+} */
 
 .contact-section .contact-form {
   width: 100%;

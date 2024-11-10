@@ -127,13 +127,14 @@ section {
   transition: background-color 0.3s ease;
 }
 
-/* Positioning the Button */
 .podcast-invitation {
-  position: fixed; /* Fixed position */
-  top: 20px; /* Distance from top */
-  right: 20px; /* Distance from right */
-  z-index: 1001; /* Ensure it's above other content */
+  position: fixed;
+  top: 40%;             /* Vertically center */
+  left: 20px;           /* Align it to the left */
+  transform: translateY(-50%); /* Center it precisely */
+  z-index: 1000;
 }
+
 
 body {
   margin: 0;

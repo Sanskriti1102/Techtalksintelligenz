@@ -366,10 +366,10 @@
 				<img src="images\LOGO.png" id="web-logo">
 				<a class="navbar-brand" href="index.html"> IntelligenZ</a>
 			</div>
-			
+
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> 
+				<span class="oi oi-menu"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
@@ -389,8 +389,8 @@
 			</div>
 			<div>
 				<button id="openModal" class="btn btn-white"><a
-					href="https://docs.google.com/forms/d/e/1FAIpQLScpLC68g-_PYulE5GubBGqVQ7q674jD1Y-X4XdoytIueJP4XA/viewform"
-					target="_blank" class="white">Join the Podcast</a></button>
+						href="https://docs.google.com/forms/d/e/1FAIpQLScpLC68g-_PYulE5GubBGqVQ7q674jD1Y-X4XdoytIueJP4XA/viewform"
+						target="_blank" class="white">Join the Podcast</a></button>
 			</div>
 		</div>
 	</nav>
@@ -1009,6 +1009,7 @@
 					</div>
 				</div>
 			</section>
+ 
 
 
 	<section class="ftco-section" id="certification-section">
@@ -1094,6 +1095,7 @@
 							</div>
 							<span>Views</span>
 
+ 
 						</div>
 					</div>
 					<div class="row d-md-flex align-items-center stats">
@@ -1144,6 +1146,7 @@
 					</div>
 				</div>
  			</section>
+
  
 			<section class="ftco-section ftco-hireme img margin-top"
 				style="background-image: url(images/bg_1.jpg) !important;">
@@ -1155,7 +1158,7 @@
 							<p></p>
 							<!-- <p class="mb-0"><a href="#contact-section" class="gradient-background btn btn-primary py-3 px-5">Work with us</a></p> -->
 							<!-- <p><a style="color: white !important;" href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" class="gradient-background btn btn-primary py-4 ">Work With Us</a></p> -->
-						</div>
+ 						</div>
 					</div>
 				</div>
 			</section>
@@ -1167,79 +1170,224 @@
 							<h1 class="big big-2 gradient-text">Contact</h1><br><br>
 							<h2 class="mb-4">Contact Us</h2>
 							<p></p>
-						</div>
-					</div>
+							<form id="contactForm">
+								<div class="form-group">
+									<label for="name">Name:</label>
+									<input type="text" class="form-control" id="name" required>
+								</div>
+								<div class="form-group">
+									<label for="email">Email:</label>
+									<input type="email" class="form-control" id="email" required>
+								</div>
+								<div class="form-group">
+									<label for="message">Message:</label>
+									<textarea class="form-control" id="message" rows="4" required></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
 
-					<div class="row d-flex contact-info mb-5">
-						<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-							<div class="align-self-stretch box p-4 text-center">
-								<a href="#" class="icon d-flex align-items-center justify-content-center">
-									<span class="gradient-text icon-map-signs"></span>
-								</a>
-								<a href="#">
-									<h3 class="mb-4">Address</h3>
-								</a>
-								<p><a href="#">Mumbai, Maharashtra</a></p>
+							<!-- Success Message -->
+							<div id="successMessage" class="alert alert-success mt-3" style="display:none;">
+								Thank you for getting in touch! We'll respond shortly.
 							</div>
-						</div>
-
-						<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-							<div class="align-self-stretch box p-4 text-center">
-								<a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" target="_blank"
-									class="icon d-flex align-items-center justify-content-center">
-									<span class="gradient-text">
-										<i class="fab fa-youtube"></i>
-									</span>
-								</a>
-								<a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" target="_blank">
-									<h3 class="mb-4">YouTube</h3>
-								</a>
-								<p><a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"
-										target="_blank">IntelligenZ</a></p>
-							</div>
-						</div>
-
-						<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-							<div class="align-self-stretch box p-4 text-center">
-								<a href="mailto:intelligenz0212@gmail.com"
-									class="icon d-flex align-items-center justify-content-center">
-									<span class="gradient-text icon-paper-plane"></span>
-								</a>
-								<a href="mailto:intelligenz0212@gmail.com">
-									<h3 class="mb-4">Email Address</h3>
-								</a>
-								<p><a href="mailto:intelligenz0212@gmail.com">intelligenz0212@gmail.com</a></p>
-							</div>
-						</div>
-
-						<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-							<div class="align-self-stretch box p-4 text-center">
-								<a href="https://intelligenz.netlify.app/" target="_blank"
-									class="icon d-flex align-items-center justify-content-center">
-									<span class="gradient-text icon-globe"></span>
-								</a>
-
-								<a href="https://intelligenz.netlify.app/" target="_blank">
-									<h3 class="mb-4">Website</h3>
-								</a>
-
-								<p><a href="https://intelligenz.netlify.app/"
-										target="_blank">intelligenz.netlify.app</a></p>
-							</div>
-						</div>
-					</div>
-
- 					<!-- Button in Top Right Corner -->
-					<div class="podcast-invitation">
-						<button id="openModal" class="btn btn-white"><a
-								href="https://docs.google.com/forms/d/e/1FAIpQLScpLC68g-_PYulE5GubBGqVQ7q674jD1Y-X4XdoytIueJP4XA/viewform"
-								target="_blank" class="white">Join the Podcast</a></button>
-					</div>
  
+						</div>
+					</div>
+
+					<script>
+						document.getElementById('contactForm').addEventListener('submit', async function (event) {
+							event.preventDefault();
+
+							// Get the form data
+							const name = document.getElementById('name').value;
+							const email = document.getElementById('email').value;
+							const message = document.getElementById('message').value;
+
+							console.log(name + " " + email + " " + message);
+
+							try {
+								const response = await fetch('http://localhost:5000/contact/saveContact', {
+									method: 'POST',
+									headers: {
+										'Content-Type': 'application/json',
+									},
+									body: JSON.stringify({ name, email, message }),
+								});
+
+								const data = await response.json();
+
+								if (data.success) {
+									document.getElementById('successMessage').style.display = 'block';
+									document.getElementById('contactForm').reset(); // Clear the form
+								} else {
+									alert('There was an issue submitting your form. Please try again.');
+								}
+							} catch (error) {
+								alert('An error occurred. Please try again.');
+							}
+						});
+					</script>
+
+
+					<style>
+						/* Form Styles */
+						#contactForm {
+							background-color: #f8f9fa;
+							/* Keep the light background for the form */
+							border-radius: 15px;
+							/* More pronounced rounded corners */
+							padding: 30px;
+							/* Increased padding for a spacious feel */
+							box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+							/* Enhanced shadow for depth */
+							transition: box-shadow 0.3s ease;
+							/* Smooth shadow transition */
+						}
+
+						/* Form Shadow Effect on Hover */
+						#contactForm:hover {
+							box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+							/* Shadow effect on hover */
+						}
+
+						/* Input Fields */
+						.form-control {
+							border-radius: 25px;
+							/* Rounded corners */
+							border: 1px solid #ced4da;
+							/* Light grey border */
+							transition: border-color 0.3s ease;
+							/* Smooth border color transition */
+							padding: 15px;
+							/* Increased padding inside input */
+							font-size: 16px;
+							/* Larger font for better readability */
+						}
+
+						/* Input Focus Effect */
+						.form-control:focus {
+							border-color: #007bff;
+							/* Blue border on focus */
+							box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+							/* Shadow on focus */
+							outline: none;
+							/* Remove default outline */
+						}
+
+						/* Button Styles */
+						.btn-primary {
+							background-color: #007bff;
+							/* Bootstrap primary color */
+							border: none;
+							/* Remove default border */
+							border-radius: 25px;
+							/* Rounded corners */
+							padding: 12px 20px;
+							/* Increased padding for a better clickable area */
+							font-size: 16px;
+							/* Larger font size */
+							transition: background-color 0.3s ease, transform 0.2s ease;
+							/* Smooth transitions */
+						}
+
+						/* Button Hover Effect */
+						.btn-primary:hover {
+							background-color: #0056b3;
+							/* Darker blue on hover */
+							transform: translateY(-2px);
+							/* Slight lift effect on hover */
+							box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+							/* Shadow on hover */
+						}
+
+						/* Alert Styles */
+						.alert {
+							background-color: #d4edda;
+							/* Light green background for success alert */
+							border-color: #c3e6cb;
+							/* Green border for alert */
+							color: #155724;
+							/* Dark green text color */
+							border-radius: 10px;
+							/* Rounded corners */
+							padding: 15px;
+							/* Padding inside alert */
+							transition: opacity 0.5s ease;
+							/* Smooth opacity transition */
+							display: none;
+							/* Initially hidden */
+						}
+					</style>
+
+
+				</div>
+ 		</div>
+
+		<div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<a href="#" class="icon d-flex align-items-center justify-content-center">
+						<span class="gradient-text icon-map-signs"></span>
+					</a>
+					<a href="#">
+						<h3 class="mb-4">Address</h3>
+					</a>
+					<p><a href="#">Mumbai, Maharashtra</a></p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" target="_blank"
+						class="icon d-flex align-items-center justify-content-center">
+						<span class="gradient-text">
+							<i class="fab fa-youtube"></i>
+						</span>
+					</a>
+					<a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" target="_blank">
+						<h3 class="mb-4">YouTube</h3>
+					</a>
+					<p><a href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"
+							target="_blank">IntelligenZ</a></p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<a href="mailto:intelligenz0212@gmail.com"
+						class="icon d-flex align-items-center justify-content-center">
+						<span class="gradient-text icon-paper-plane"></span>
+					</a>
+					<a href="mailto:intelligenz0212@gmail.com">
+						<h3 class="mb-4">Email Address</h3>
+					</a>
+					<p><a href="mailto:intelligenz0212@gmail.com">intelligenz0212@gmail.com</a></p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<a href="https://intelligenz.netlify.app/" target="_blank"
+						class="icon d-flex align-items-center justify-content-center">
+						<span class="gradient-text icon-globe"></span>
+					</a>
+
+					<a href="https://intelligenz.netlify.app/" target="_blank">
+						<h3 class="mb-4">Website</h3>
+					</a>
+
+					<p><a href="https://intelligenz.netlify.app/" target="_blank">intelligenz.netlify.app</a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Button in Top Right Corner -->
 
 
 
-					<!-- <div class="row no-gutters block-9">
+
+		<!-- <div class="row no-gutters block-9">
+ 
 				<div class="col-md-6 order-md-last d-flex">
 					<form action="#" class="bg-light p-4 p-md-5 contact-form">
 						<div class="form-group">
@@ -1266,6 +1414,63 @@
 					<div class="img" style="background-image: url(images/about.jpg);"></div>
 				</div>
 			</div> -->
+ 		</div>
+	</section>
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">About</h2>
+						<p>We delve into pioneering domains within intelligent computing, providing deep insights into
+							the latest advancements and cutting-edge technologies.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="https://x.com/IntelligenZ_OP">
+									<span>
+										<i class="fa-brands fa-x-twitter" style="font-size: 26px;"></i>
+									</span>
+								</a></li>
+							<li class="ftco-animate"><a
+									href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"><span
+										class="fab fa-youtube"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.instagram.com/intelligenz_op/"><span
+										class="icon-instagram"></span></a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+							<li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Domains</a>
+							</li>
+							<!-- <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li> -->
+							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Domains</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Artificial Intelligence</a>
+							</li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>CyberSecurity</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Nature Inspired
+									Computing</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Ubiquitous Computing</a>
+							</li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Bayesian Computing</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Intelligent Security
+									Systems</a></li>
+						</ul>
+					</div>
+ 
 				</div>
 			</section>
 
@@ -1362,43 +1567,69 @@
 						</div>
 					</div>
 				</div>
- 			</footer>
+ 			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
 
-			<button id="backToTop" class="back-to-top-button">↑</button>
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | <a
+							href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"
+							target="_blank">IntelligenZ</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="gtranslate_wrapper"></div>
 
-			<!-- loader -->
-			<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-					<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-					<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-						stroke="#F96D00" />
-				</svg></div>
-			<iframe src="https://www.chatbase.co/chatbot-iframe/1MR1a7tdmOzKBNEf6_QI3" width="100%"
-				style="height: 100%; min-height: 700px" frameborder="0"></iframe>
+		<script>
 
-			<script src="/js/backToTop.js"></script>
-			<script src="js/jquery.min.js"></script>
-			<script src="js/jquery-migrate-3.0.1.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/jquery.easing.1.3.js"></script>
-			<script src="js/jquery.waypoints.min.js"></script>
-			<script src="js/jquery.stellar.min.js"></script>
-			<script src="js/owl.carousel.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>
-			<script src="js/aos.js"></script>
-			<script src="js/jquery.animateNumber.min.js"></script>
-			<script src="js/scrollax.min.js"></script>
-			<script src="js/main.js"></script>
-			<script src="js/googleTranslator.js"></script>
-			<script>
-				window.embeddedChatbotConfig = {
-					chatbotId: "1MR1a7tdmOzKBNEf6_QI3",
-					domain: "www.chatbase.co"
-				}
-			</script>
-			<script src="https://www.chatbase.co/embed.min.js" chatbotId="1MR1a7tdmOzKBNEf6_QI3"
-				domain="www.chatbase.co" defer>
-				</script>
+			window.gtranslateSettings = {
+				"default_language": "en",
+				"detect_browser_language": true,
+				"wrapper_selector": ".gtranslate_wrapper"
+			}
+
+		</script>
+
+		<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+	</footer>
+
+	<button id="backToTop" class="back-to-top-button">↑</button>
+
+	<!-- loader -->
+	<!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+	<iframe src="https://www.chatbase.co/chatbot-iframe/1MR1a7tdmOzKBNEf6_QI3" width="100%"
+		style="height: 100%; min-height: 700px" frameborder="0"></iframe> -->
+
+	<script src="/js/backToTop.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		window.embeddedChatbotConfig = {
+			chatbotId: "1MR1a7tdmOzKBNEf6_QI3",
+			domain: "www.chatbase.co"
+		}
+	</script>
+	<script src="https://www.chatbase.co/embed.min.js" chatbotId="1MR1a7tdmOzKBNEf6_QI3" domain="www.chatbase.co" defer>
+	</script>
  
 </body>
 

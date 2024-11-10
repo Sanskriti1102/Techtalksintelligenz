@@ -373,15 +373,18 @@
 			</button>
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
+				<ul class="navbar-nav nav ml-auto" style="width: 800px;">
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>We Feature on</span></a></li>
 					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Domains</span></a></li>
+					<li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certification</span></a></li>
 					<!-- <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li> -->
 					<!-- <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li> -->
 					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Our Blog</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					<li class="nav-item"><a href="/testimonial/testimonial.html"
+							class="nav-link"><span>Testimonial</span></a></li>
 				</ul>
 			</div>
 			<div>
@@ -1006,15 +1009,93 @@
 					</div>
 				</div>
 			</section>
+ 
 
-			<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img " id="section-counter">
-				<div class="container stats_container">
 
-					<div class="row justify-content-center mb-5 pb-5">
-						<div class="col-md-7 heading-section text-center ftco-animate">
-							<h2 class="mb-4">Our Stats</h2>
-							<p>Showcases the impact of Tech Talks X IntelligenZ, connecting with tech enthusiasts
-								worldwide through views, videos, likes, and subscribers.</p>
+	<section class="ftco-section" id="certification-section">
+		<div class="container">
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2 gradient-text">Certification</h1><br><br>
+					<h2 class="mb-4">Our Certification Quizes</h2>
+					<p>Earn certifications by completing assessments in various innovative tech domains.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<span class="icon"><img src="images/ai-course.jpg" alt=""></span>
+						<h3 class="mb-5">Artificial Intelligence</h3>
+						<button onclick="startCertification('Artificial Intelligence')">Register</button>
+					</div>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<span class="icon"><img src="images/cyber-security-1.jpg" alt="" style="width: 273px; height: 183px;"></span>
+						<h3 class="mb-5">CyberSecurity</h3>
+						<button onclick="startCertification('CyberSecurity')">Register</button>
+					</div>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<span class="icon"><img src="images/nature-inspired-comp.jpg" alt="" style="width: 273px; height: 183px;"></span>
+						<h3 class="mb-5">Nature Inspired Computing</h3>
+						<button onclick="startCertification('Nature Inspired Computing')">Register</button>
+					</div>
+				</div>
+				 <div class="col-md-4 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<span class="icon"><img src="images/cryptography.png" alt="" style="width: 273px; height: 183px;"></span>
+						<h3 class="mb-5">Cryptography and Secure Communication</h3>
+						<button onclick="startCertification('Cryptography and Secure Communication')">Regster</button>
+					</div>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<span class="icon"><img src="images/comp-vision-img-recog.jpg" alt="" style="width: 273px; height: 183px;"></span>
+						<h3 class="mb-5">Computer Vision and Image Recognition</h3>
+						<button onclick="startCertification('Computer Vision and Image Recognition')">Register</button>
+					</div>
+				</div> 
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<div class="services-1">
+						<span class="icon"><img src="images/intelligence-security.jpg" alt="" style="width: 273px; height: 183px;"></span>
+						<h3 class="mb-5">Intelligent Security Systems</h3>
+						<button onclick="startCertification('Intelligent Security Systems')">Register</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		function startCertification(domain) {
+			alert("You are successfully registered for the " + domain + " assessment. For further updates please check your registered email");
+			// You can redirect to the quiz page or certification process here
+		}
+	</script>
+	
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img " id="section-counter">
+		<div class="container stats_container">
+			
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h2 class="mb-4">Our Stats</h2>
+					<p>Showcases the impact of Tech Talks X IntelligenZ, connecting with tech enthusiasts worldwide through views, videos, likes, and subscribers.</p>
+				</div>
+			</div>
+			<div class="row d-md-flex align-items-center stats">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 stats_box">
+						<div class="text">
+							<div class="number-container">
+								<strong class="number gradient-text" data-number="2400">0</strong>
+								<span class="plus-icon">+</span>
+							</div>
+							<span>Views</span>
+
+ 
 						</div>
 					</div>
 					<div class="row d-md-flex align-items-center stats">
@@ -1064,8 +1145,9 @@
 						</div>
 					</div>
 				</div>
-			</section>
+ 			</section>
 
+ 
 			<section class="ftco-section ftco-hireme img margin-top"
 				style="background-image: url(images/bg_1.jpg) !important;">
 				<div class="container">
@@ -1076,7 +1158,7 @@
 							<p></p>
 							<!-- <p class="mb-0"><a href="#contact-section" class="gradient-background btn btn-primary py-3 px-5">Work with us</a></p> -->
 							<!-- <p><a style="color: white !important;" href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww" class="gradient-background btn btn-primary py-4 ">Work With Us</a></p> -->
-						</div>
+ 						</div>
 					</div>
 				</div>
 			</section>
@@ -1108,6 +1190,7 @@
 							<div id="successMessage" class="alert alert-success mt-3" style="display:none;">
 								Thank you for getting in touch! We'll respond shortly.
 							</div>
+ 
 						</div>
 					</div>
 
@@ -1238,7 +1321,7 @@
 
 
 				</div>
-		</div>
+ 		</div>
 
 		<div class="row d-flex contact-info mb-5">
 			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -1304,6 +1387,7 @@
 
 
 		<!-- <div class="row no-gutters block-9">
+ 
 				<div class="col-md-6 order-md-last d-flex">
 					<form action="#" class="bg-light p-4 p-md-5 contact-form">
 						<div class="form-group">
@@ -1330,7 +1414,7 @@
 					<div class="img" style="background-image: url(images/about.jpg);"></div>
 				</div>
 			</div> -->
-		</div>
+ 		</div>
 	</section>
 
 	<footer class="ftco-footer ftco-section">
@@ -1386,23 +1470,104 @@
 									Systems</a></li>
 						</ul>
 					</div>
+ 
 				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have any Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon icon-map-marker"></span><span
-										class="text">Mumbai,Maharashtra</span></li>
-								<!-- <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
+			</section>
+
+ 
+			<footer class="ftco-footer ftco-section">
+				<div class="container">
+					<div class="row mb-5">
+						<div class="col-md">
+							<div class="ftco-footer-widget mb-4">
+								<h2 class="ftco-heading-2">About</h2>
+								<p>We delve into pioneering domains within intelligent computing, providing deep
+									insights into
+									the latest advancements and cutting-edge technologies.</p>
+								<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+									<li class="ftco-animate"><a href="https://x.com/IntelligenZ_OP">
+											<span>
+												<i class="fa-brands fa-x-twitter" style="font-size: 26px;"></i>
+											</span>
+										</a></li>
+									<li class="ftco-animate"><a
+											href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"><span
+												class="fab fa-youtube"></span></a></li>
+									<li class="ftco-animate"><a href="https://www.instagram.com/intelligenz_op/"><span
+												class="icon-instagram"></span></a></li>
+									<div id="google_element" class="google-translate-container"></div>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="ftco-footer-widget mb-4 ml-md-4">
+								<h2 class="ftco-heading-2">Links</h2>
+								<ul class="list-unstyled">
+									<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+									<li><a href="#about-section"><span
+												class="icon-long-arrow-right mr-2"></span>About</a></li>
+									<li><a href="#services-section"><span
+												class="icon-long-arrow-right mr-2"></span>Domains</a>
+									</li>
+									<!-- <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li> -->
+									<li><a href="#contact-section"><span
+												class="icon-long-arrow-right mr-2"></span>Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="ftco-footer-widget mb-4">
+								<h2 class="ftco-heading-2">Domains</h2>
+								<ul class="list-unstyled">
+									<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Artificial
+											Intelligence</a>
+									</li>
+									<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>CyberSecurity</a>
+									</li>
+									<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Nature Inspired
+											Computing</a></li>
+									<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Ubiquitous
+											Computing</a>
+									</li>
+									<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Bayesian
+											Computing</a></li>
+									<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Intelligent Security
+											Systems</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="ftco-footer-widget mb-4">
+								<h2 class="ftco-heading-2">Have any Questions?</h2>
+								<div class="block-23 mb-3">
+									<ul>
+										<li><span class="icon icon-map-marker"></span><span
+												class="text">Mumbai,Maharashtra</span></li>
+										<!-- <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
+ 
 											210</span></a></li> -->
-								<li><a href="#"><span class="icon icon-envelope"></span><span class="text">
-											intelligenz0212@gmail.com</span></a></li>
-							</ul>
+										<li><a href="#"><span class="icon icon-envelope"></span><span class="text">
+													intelligenz0212@gmail.com</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center">
+
+							<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script> All rights reserved | <a
+									href="https://www.youtube.com/channel/UCbUtPTIsWVP5AhbswlpKqww"
+									target="_blank">IntelligenZ</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</p>
 						</div>
 					</div>
 				</div>
-			</div>
+ 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center">
 
@@ -1465,7 +1630,7 @@
 	</script>
 	<script src="https://www.chatbase.co/embed.min.js" chatbotId="1MR1a7tdmOzKBNEf6_QI3" domain="www.chatbase.co" defer>
 	</script>
-
+ 
 </body>
 
 </html>

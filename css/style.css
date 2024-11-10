@@ -10269,7 +10269,7 @@ button.bg-dark:focus {
 
   .ml-md-4,
   .mx-md-4 {
-    margin-left: 1.5rem !important;
+    margin-left: 3.5rem !important;
   }
 
   .m-md-5 {
@@ -14276,4 +14276,23 @@ textarea.form-control {
   background-color: #0056b3; /* color of the scrollbar thumb */
   border-radius: 10px; /* round edges */
   border: 2px solid #f1f1f1; /* adds space around the thumb */
+}
+
+.services-1 button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.services-1 button:hover {
+  background-color: var(--blue);
+}
+
+.services-1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #0056b3;
 }

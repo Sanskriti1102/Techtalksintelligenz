@@ -1,7 +1,8 @@
 
 # Tech Talks X IntelligenZ Website
+This is a GSSOC project made by sanskriti kadam
 
-### Project Admin: 
+### Project Admin for this project: 
 - **GitHub:** [Sanskriti Kadam | GitHub](https://github.com/Sanskriti1102)
 - **LinkedIn:** [Sanskriti Kadam | LinkedIn](https://www.linkedin.com/in/sanskritikadam/)
 
